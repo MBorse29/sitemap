@@ -1,0 +1,180 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.sitemap-overlay {
+  height: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .sitemap-overlay {
+    height: 200px;
+    background: url("../../images/terms_bg.jpg") no-repeat scroll left top;
+    background-size: cover;
+  }
+}
+
+.sitemap-title h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding: 0 0 10px;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .sitemap-title h2 {
+    font-size: 40px;
+    margin: 40px 0 20px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .sitemap-title h2 {
+    font-size: 48px;
+    margin: 60px 0 30px;
+  }
+}
+
+.sitemap-content {
+  position: relative;
+  padding: 0 0 0 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #222729;
+}
+
+@media only screen and (min-width: 768px) {
+  .sitemap-content {
+    padding: 0 0 0 30px;
+  }
+}
+
+.sitemap-title h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 130px;
+  border-bottom: solid 4px #d9431e;
+}
+
+@media only screen and (min-width: 768px) {
+  .sitemap-title h2:after {
+    width: 72px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .sitemap-title h2:after {
+    width: 85px;
+  }
+}
+
+.sitemap-links {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.sitemap-links a,
+.sitemap-links a:hover,
+.sitemap-links a:active {
+  border: 0 solid #d9431e;
+  background: #cccccc;
+  border-radius: 5%;
+  color: #000;
+  display: inline-block;
+  max-width: 185px;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sitemap-links a:hover {
+  background: #d9431e;
+  color: #fff;
+}
+
+.sitemap-links .content-text-sub-heading a,
+.sitemap-links .content-text-sub-heading a:hover,
+.sitemap-links .content-text-sub-heading a:active {
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  .sitemap-links a,
+  .sitemap-links a:hover,
+  .sitemap-links a:active {
+    max-width: 385px;
+  }
+}
+
+.sitemap-links:after {
+  border-left: 1px solid #808080;
+  content: "";
+  height: calc(100% - 60px);
+  height: -moz-calc(100% - 60px);
+  height: -webkit-calc(100% - 60px);
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 10px;
+}
+
+.sitemap-sub-links {
+  list-style: outside none none;
+  margin: 0 0 0 40px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.sitemap-sub-links .sitemap-sub-node {
+  padding: 10px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .sitemap-sub-links {
+    margin: 0 0 0 80px;
+  }
+}
+
+.sitemap-sub-links:after {
+  border-left: 1px solid #808080;
+  content: "";
+  height: 96.4%;
+  height: calc(100% - 50px);
+  height: -moz-calc(100% - 50px);
+  height: -webkit-calc(100% - 50px);
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 10px;
+}
+
+.dotted-image-sitemap {
+  width: 20px;
+  height: 20px;
+  float: left;
+  border-bottom: 1px solid #808080;
+  -webkit-transition: all 5s ease;
+  -moz-transition: all 5s ease;
+  -ms-transition: all 5s ease;
+  -o-transition: all 5s ease;
+  transition: all 5s ease;
+}
+
+@media only screen and (min-width: 768px) {
+  .dotted-image-sitemap {
+    width: 40px;
+  }
+}

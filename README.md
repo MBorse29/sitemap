@@ -1,2 +1,0 @@
-# sitemap
-Created with CodeSandbox
