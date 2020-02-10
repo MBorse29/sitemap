@@ -40,8 +40,15 @@ const siteMap = [
 
 const iterate = ({ title, submap }) => (
   <Fragment>
-    <li>{title}</li>
-    <ul>{!!(submap && submap.length) && submap.map(item => iterate(item))}</ul>
+    <li className="sitemap-node">
+      <div className="dotted-image-sitemap" />
+      <div className="content-text-sub-heading">
+        <a href="https://www.xento.com/"> {title} </a>{" "}
+      </div>
+      <ul className="sitemap-sub-links">
+        {!!(submap && submap.length) && submap.map(item => iterate(item))}{" "}
+      </ul>
+    </li>
   </Fragment>
 );
 
@@ -49,7 +56,11 @@ export default function App() {
   return (
     <div className="App">
       <h1>Iterating Sitemap</h1>
-      <ul>{siteMap.map(iterate)}</ul>
+      <div className="sitemap-container">
+        <div className="sitemap-content">
+          <ul className="sitemap-links">{siteMap.map(iterate)}</ul>
+        </div>
+      </div>
     </div>
   );
 }

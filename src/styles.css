@@ -152,9 +152,7 @@
   border-left: 1px solid #808080;
   content: "";
   height: 96.4%;
-  height: calc(100% - 50px);
-  height: -moz-calc(100% - 50px);
-  height: -webkit-calc(100% - 50px);
+  height: calc(100% - 80px);
   top: 0;
   left: 0;
   position: absolute;
@@ -163,7 +161,7 @@
 
 .dotted-image-sitemap {
   width: 20px;
-  height: 20px;
+  height: 15px;
   float: left;
   border-bottom: 1px solid #808080;
   -webkit-transition: all 5s ease;
