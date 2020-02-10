@@ -46,6 +46,7 @@
   font-size: 14px;
   font-weight: 400;
   color: #222729;
+  text-align: left;
 }
 
 @media only screen and (min-width: 768px) {
